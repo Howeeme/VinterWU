@@ -1,6 +1,90 @@
+* {
+    margin: 0;
+}
+
+#wrapper1 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 14fr 86fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    'sc hd'
+    'nav ma';
+}
+
 body {
+
+}
+
+header {
+    grid-area: hd;
+    background-color: rgb(170, 36, 36);
+
+}
+
+section {
+    grid-area: sc;
+    background-color: rgb(77, 205, 51);
+
+}
+
+main {
+    grid-area: ma;
+    background-color: rgb(238, 2, 183);
+
+}
+
+nav {
+    grid-area: nav;
+    background-color: aqua;
+
+}
+
+
+
+
+#wrapper2 {
     height: 100%;
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ; 
+    grid-template-columns: 14% 43% 43%;
+    grid-template-rows: 20% 40% 40% ;
+    grid-template-areas: 
+    'div hd hd'
+    'nav se1 se2'
+    'nav se3 se4'
+}
+
+se1 {
+    display: grid;
+    grid-area: se1;
+    background-color: beige;
+}
+
+se2 {
+    display: grid;
+    grid-area: se1;
+    background-color: rgb(188, 188, 134);
+}
+
+se3 {
+    display: grid;
+    grid-area: se1;
+    background-color: rgb(170, 170, 103);
+}
+
+se4 {
+    display: grid;
+    grid-area: se1;
+    background-color: rgb(108, 108, 97);
+}
+
+#wrapper3 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 14% 56% 30%;
+    grid-template-rows: 20% 55% 25% ;
+    grid-template-areas: 
+    'div hd hd'
+    'nav ma se'
+    'nav as se'
 }
