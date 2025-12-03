@@ -8,13 +8,10 @@
     grid-template-columns: 14fr 86fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas: 
-    'sc hd'
+    'div hd'
     'nav ma';
 }
 
-body {
-
-}
 
 header {
     grid-area: hd;
@@ -22,8 +19,8 @@ header {
 
 }
 
-section {
-    grid-area: sc;
+div {
+    grid-area: div;
     background-color: rgb(77, 205, 51);
 
 }
@@ -44,7 +41,7 @@ nav {
 
 
 #wrapper2 {
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 14% 43% 43%;
     grid-template-rows: 20% 40% 40% ;
@@ -54,32 +51,28 @@ nav {
     'nav se3 se4'
 }
 
-se1 {
-    display: grid;
+section1 {
     grid-area: se1;
     background-color: beige;
 }
 
-se2 {
-    display: grid;
-    grid-area: se1;
+section2 {
+    grid-area: se2;
     background-color: rgb(188, 188, 134);
 }
 
-se3 {
-    display: grid;
-    grid-area: se1;
+section3 {
+    grid-area: se3;
     background-color: rgb(170, 170, 103);
 }
 
-se4 {
-    display: grid;
-    grid-area: se1;
+section4 {
+    grid-area: se4.;
     background-color: rgb(108, 108, 97);
 }
 
 #wrapper3 {
-    height: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 14% 56% 30%;
     grid-template-rows: 20% 55% 25% ;
@@ -87,4 +80,14 @@ se4 {
     'div hd hd'
     'nav ma se'
     'nav as se'
+}
+
+aside {
+    grid-area: as;
+    background-color: blanchedalmond;
+}
+
+section {
+    grid-area: se;
+    background-color: aquamarine;
 }
