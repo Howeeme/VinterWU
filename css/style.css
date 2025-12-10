@@ -21,8 +21,7 @@ header {
 
 div {
     grid-area: div;
-    background-color: rgb(77, 205, 51);
-    outline: solid #2980b9;
+    background-color: white;
 }
 
 main {
@@ -76,4 +75,10 @@ aside {
 section {
     grid-area: se;
     background-color: aquamarine;
+}
+
+#logo {
+    width: 200px;
+    justify-self: center;
+    align-self: center;
 }
