@@ -5,11 +5,11 @@
 #wrapper1 {
     height: 100vh;
     display: grid;
-    grid-template-columns: 14fr 86fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 12fr 88fr;
+    grid-template-rows: 14fr 86fr;
     grid-template-areas: 
     'div hd'
-    'nav ma';
+    'nav ma'
 }
 
 
@@ -22,7 +22,7 @@ header {
 div {
     grid-area: div;
     background-color: rgb(77, 205, 51);
-
+    outline: solid #2980b9;
 }
 
 main {
@@ -34,7 +34,6 @@ main {
 nav {
     grid-area: nav;
     background-color: aqua;
-
 }
 
 
@@ -43,33 +42,20 @@ nav {
 #wrapper2 {
     height: 100vh;
     display: grid;
-    grid-template-columns: 14% 43% 43%;
-    grid-template-rows: 20% 40% 40% ;
+    grid-template-columns: 12% 44% 44%;
+    grid-template-rows: 14% 43% 43% ;
     grid-template-areas: 
     'div hd hd'
-    'nav se1 se2'
-    'nav se3 se4'
+    'nav se se'
+    'nav se se'
 }
 
-section1 {
-    grid-area: se1;
+#blocks {
+    grid-area: se;
     background-color: beige;
 }
 
-section2 {
-    grid-area: se2;
-    background-color: rgb(188, 188, 134);
-}
 
-section3 {
-    grid-area: se3;
-    background-color: rgb(170, 170, 103);
-}
-
-section4 {
-    grid-area: se4.;
-    background-color: rgb(108, 108, 97);
-}
 
 #wrapper3 {
     height: 100vh;
