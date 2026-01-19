@@ -2,20 +2,10 @@
     margin: 0;
 }
 
-#wrapper1 {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 12fr 88fr;
-    grid-template-rows: 14fr 86fr;
-    grid-template-areas: 
-    'div hd'
-    'nav ma'
-}
-
 
 header {
     grid-area: hd;
-    background-color: rgb(170, 36, 36);
+    background-color: #2980b9;
 
 }
 
@@ -32,7 +22,33 @@ main {
 
 nav {
     grid-area: nav;
-    background-color: aqua;
+    background-color: #2980b9;
+}
+
+aside {
+    grid-area: as;
+    background-color: blanchedalmond;
+}
+
+section {
+    grid-area: se;
+    background-color: aquamarine;
+}
+
+#wrapper1 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 12fr 88fr;
+    grid-template-rows: 14fr 86fr;
+    grid-template-areas: 
+    'div hd'
+    'nav ma'
+}
+
+#information {
+    overflow: scroll;
+    margin: 15px;
+    padding: 15px;
 }
 
 
@@ -49,12 +65,35 @@ nav {
     'nav se se'
 }
 
-#blocks {
-    grid-area: se;
-    background-color: beige;
+
+.container{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;
+    overflow: scroll;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+.card{
+    border-radius: 5px;
+    height: 100px;
 }
 
 
+.card-size{
+    width: 300px;
+    height: 200px;
+}
+
+.cardinfo{
+    padding: 2px 15px;
+    width: 300px;
+}
 
 #wrapper3 {
     height: 100vh;
@@ -67,15 +106,6 @@ nav {
     'nav as se'
 }
 
-aside {
-    grid-area: as;
-    background-color: blanchedalmond;
-}
-
-section {
-    grid-area: se;
-    background-color: aquamarine;
-}
 
 #logo {
     width: 200px;
